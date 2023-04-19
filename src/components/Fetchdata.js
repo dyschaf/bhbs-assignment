@@ -23,7 +23,7 @@ function FetchData() {
       {sponsors.map((sponsor, i) => (
         <div className=''  key={i}>
           {sponsor.values.map((value, j) => (
-            <div className='border'>
+            <>
             <div className="contaner" key={j}>
               <div className='info'>
               <h2>{value.display_name.split(' ')[0]} Partner</h2>
@@ -41,7 +41,7 @@ function FetchData() {
           <div className="button-wrapper">
           </div>
           </div>
-            </div>
+            </>
           ))}
         </div>
       ))}
