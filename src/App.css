@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info{
+  width: 60vw;
+  margin-top: -20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.info h2{
+color: red;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.border{
+  
+}
+.contaner{
+  border: solid 4px red;
+  margin: 20px;
+  margin-left: 5vw;
+  margin-right:5vw;
+  padding: 10px;
+  width: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  
+  
+}
+.member-card img{
+  border-radius: 60%;
+  width: 190px;
+}
+.member-card{
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(218, 218, 216);
+  text-align: center;
+  
+}
+button{
+  background-color: red;
+  height: 40px;
+  width: 170px;
+  border-radius: 100px;
+  border: red;
   color: white;
+  font-size: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+button:hover{
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bolder {
+  font-weight: 800;
+  font-size: 20px;
+  
+}
+.member-details a svg {
+  text-align: right;
+  align-items: left;
+  margin-left:150px;
+}
+@media only screen and (max-width: 700px) {
+  .contaner{
+    border: solid 4px red;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 60px;
+  }  
+  .member-card{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(218, 218, 216);
   }
-  to {
-    transform: rotate(360deg);
+  .info{
+    width: auto;
+    text-align: center;
   }
+  .info p{
+    text-align: left;
+  }
+  button {
+    position: absolute;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+  }
+  
 }

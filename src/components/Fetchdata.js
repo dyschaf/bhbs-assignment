@@ -19,21 +19,28 @@ function FetchData() {
   }, []);
 
   return (
-    <div>
+    <div className=''>
       {sponsors.map((sponsor, i) => (
-        <div key={i}>
+        <div className=''  key={i}>
           {sponsor.values.map((value, j) => (
-            <div key={j}>
+            <div className='border'>
+            <div className="contaner" key={j}>
+              <div className='info'>
               <h2>{value.display_name.split(' ')[0]} Partner</h2>
               <img src={value.logo_url} alt={value.display_name} />
               <p>{value.description}</p>
-              <button onClick={() => window.location.href=value.website}>Visit website &gt;&gt;</button>
+              <button onClick={() => window.location.href=value.website}>Visit website <span className='bolder'>&gt;&gt;</span></button>
+              </div>
               {value.team_members && (
                 <>                  {JSON.parse(value.team_members).map((member, j) => (
-      <MemberCard key={member.id} member={member} />
-    ))}
-</>
+                  <MemberCard key={member.id} member={member} />
+                  ))}
+              </>
               )}
+          
+          <div className="button-wrapper">
+          </div>
+          </div>
             </div>
           ))}
         </div>
