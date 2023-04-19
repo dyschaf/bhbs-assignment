@@ -23,7 +23,7 @@ color: red;
 }
 .member-card img{
   border-radius: 60%;
-  width: 190px;
+  width: 160px;
 }
 .member-card{
   margin: 20px;
@@ -35,7 +35,7 @@ color: red;
 button{
   background-color: red;
   height: 40px;
-  width: 170px;
+  width: 205px;
   border-radius: 100px;
   border: red;
   color: white;
